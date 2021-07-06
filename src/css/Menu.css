@@ -1,0 +1,103 @@
+/* Menu Buttons */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+  
+  
+.menu{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    background-color: rgb(51 46 46);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    height: 550px;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+.menu_title{
+    /* margin-top: 3rem; */
+    padding: .7rem;
+    text-align: center;
+    font-size: 2.6rem;
+    color: rgb(230, 227, 227);
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 2px;
+    margin: 0;
+}
+.menu_selector{
+    margin-top: 0;
+
+    /* margin-top: 1em; */
+    /* background: rgb(139, 48, 48); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 3rem 0px; 
+    border-radius: 1rem;
+}
+
+.menu_selector .menu_btn{
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+    box-shadow: 5px 5px 10px black;
+    /* background: radial-gradient(rgb(50, 255, 251),rgb(36, 124, 138)); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    padding: 1rem;
+    border: none;
+    border: .3rem solid rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 90px;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+}
+.menu_btn:nth-child(1){
+    background-color: red;
+}
+.menu_btn:nth-child(1):hover{
+    background-color: rgb(255,0,0, .3);
+}
+
+
+.menu_btn:nth-child(2){
+    background-color: blue;
+}
+.menu_btn:nth-child(2):hover{
+    background-color: rgba(0,0,255,.3);
+}
+
+
+.menu_btn:nth-child(3){
+    background-color: green;
+}
+.menu_btn:nth-child(3):hover{
+    background-color: rgb(0, 131, 0,.5);
+}
+
+.menu_selector .menu_btn:hover{
+    
+
+    cursor:pointer;
+    /* color: rgb(156, 154, 231); */
+    transform: scale(1.1);
+    /* background: radial-gradient(rgb(58, 154, 152), rgb(20, 64, 71)); */
+    
+    
+}
+      
+    
+
+
+
+  

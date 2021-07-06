@@ -1,0 +1,34 @@
+.Game{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+.game_title{
+    margin-bottom: 50px;
+}
+
+.game_startingIn{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 6px;
+    color: white;
+}
+.button_selector{
+    width: max-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.button{
+    width: 250px;
+    height: 250px;
+    border: none;
+    border: 10px solid black;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
