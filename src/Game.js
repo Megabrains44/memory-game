@@ -3,6 +3,8 @@
 import React from 'react';
 import './css/Game.css';
 import Button from './components/Button';
+import startGame from './scripts/game/start';
+import settings from './scripts/settings';
 class Game extends React.Component{
     constructor(props){
         super(props);
@@ -21,20 +23,35 @@ class Game extends React.Component{
             this.setState(state => ({
                 seconds: state.seconds - 1
             }));
+            var audio = new Audio('/sounds/tick.wav');
+            audio.play();
         }
     }
     startCountDown(){
         setTimeout(() => this.tick(), 1000)
     }
     componentDidMount(){
+        const time = 10;
+        setTimeout(() => {
+            const gameObject = document.getElementsByClassName('Game')[0];
+            gameObject.style.marginTop = "unset";
+            gameObject.style.opacity = "1";
+            
+            setTimeout(() => this.tick(), 1000)
+            
+            
+        }, time)
         
-        setTimeout(() => this.tick(), 1000)
         
     
     }
     componentDidUpdate(){
         if (this.state.starting === true){setTimeout(() => this.tick(), 1000);}
-        
+         
+        else {
+            startGame(settings);
+        }
+
         
         console.log(this.state.seconds)
         

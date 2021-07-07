@@ -3,7 +3,10 @@
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-
+    margin-top: 1000px;
+    opacity: .5;
+    transition-duration: .7s;
+    transition-timing-function: ease;
 }
 
 .game_title{
@@ -31,4 +34,10 @@
     border: 10px solid black;
     border-radius: 2rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition-timing-function: ease;
+    transition-duration: .6s;
+}
+
+.button:hover{
+    transform: scale(1.05)
 }
