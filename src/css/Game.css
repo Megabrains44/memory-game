@@ -67,3 +67,20 @@ button.button_back{
     color: white;
     cursor: pointer;
 }
+@media screen and (max-width: 600px){
+    h1.game_title{
+        font-size: 3rem;
+    }
+    div.button_selector button{
+        width: 150px;
+        height: 150px;
+    }
+    button.button_back{
+        left: 10px;
+        top: -50px;
+    }
+    body{
+        height: unset;
+    }
+
+}

@@ -57,6 +57,7 @@ export default class Menu extends React.Component{
                 <button className="menu_btn">DEV MODE</button>
                 
                 </div>
+                <div className="settingSelect">
                 <div className="questionSelect">
                 <label htmlFor="questionInput" className="questionInputLabel">Num of Questions</label>
                 <input type="text" placeholder="4" id="questionInput" />
@@ -66,6 +67,8 @@ export default class Menu extends React.Component{
     
                     <input type="text" placeholder="1" id="speedInput" />
                 </div>
+                </div>
+                
                 
             </div>
         )
