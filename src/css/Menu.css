@@ -14,10 +14,12 @@
     background-color: rgb(51 46 46);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
     border-radius: 1rem;
-    height: 600px;
+    height: 800px;
     transition-duration: .8s;
     position: absolute;
     top: 25%;
+    margin-top: -100px;
+    /* padding: 1rem; */
     transition-timing-function: ease;
 }
 
@@ -97,9 +99,31 @@
     
     
 }
-      
-    
+
+.speedInputLabel, .questionInputLabel {
+    color: rgb(223, 224, 253);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Bangers', cursive;
+    display: block;
+    text-shadow: 4px 4px 15px black;
+    margin-bottom: 1rem;
+}
+
+.questionSelect{
+    margin-bottom: 30px;
+}
+#speedInput, #questionInput{
+    padding: 5px;
+    border-radius: 2rem;
+    height: 50px;
+    width: 90px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
 
 
 
-  
+
+

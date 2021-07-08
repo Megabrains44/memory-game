@@ -1,0 +1,76 @@
+.About{
+    background-color: rgba(58, 41, 41, 0.9);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
+    width: 600px;
+    height: 700px;
+    margin-top: 1000px;
+    animation: moveUp forwards .5s ease;
+    color: white;
+    padding: 0px 15px;
+    position: relative;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+    
+}
+.about_text{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    font-size: 2.7rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.about_text::after{
+    text-align: center;
+    content: '';
+    /* border-bottom: 5px solid rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    width: 80%;
+    border-radius: .1rem;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.about_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about_paragraph_title{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.about_paragraph{
+    text-align: left;
+    width: 80%;
+    line-height: 1.7;
+}
+
+@keyframes moveUp{
+    to{
+        margin-top: unset;
+    }
+}
+
+
+
+.button_back{
+    
+    position: absolute;
+    margin-top: .8rem;
+    left: 11%;
+    
+}

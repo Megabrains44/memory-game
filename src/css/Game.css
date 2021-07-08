@@ -7,13 +7,14 @@
     opacity: .5;
     transition-duration: .7s;
     transition-timing-function: ease;
+    position: relative;
 }
 
 .game_title{
     margin-bottom: 50px;
 }
 
-.game_startingIn{
+.gameStartingIn{
     font-size: 3rem;
     font-weight: bold;
     font-family: 'Bangers', cursive;
@@ -36,8 +37,33 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     transition-timing-function: ease;
     transition-duration: .6s;
+    cursor: pointer;
 }
 
 .button:hover{
     transform: scale(1.05)
+}
+
+
+button.button_back{
+    left: -35px;
+    top: -17px;
+    /* bottom: -80px; */
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px black;
+    background-color: rgb(107, 219, 107);
+    font-weight: bold;
+    color: black;
+    font-size: 1.3rem;
+    /* background: radial-gradient(rgb(121, 241, 121), rgb(44, 107, 44)); */
+    transition-timing-function: ease;
+    transition-duration: .8s;
+    position: absolute;
+}
+.button_back:hover{
+    background-color: rgb(39, 87, 39);
+    color: white;
+    cursor: pointer;
 }

@@ -1,6 +1,6 @@
 const settings = {
-    questions: 4,
-    speed: 1
+    questions: 10,
+    speed: 1.5
 }
 
 export default settings;
