@@ -57,6 +57,7 @@
     text-align: left;
     width: 80%;
     line-height: 1.7;
+    max-width: 100%;
 }
 
 @keyframes moveUp{
@@ -72,5 +73,19 @@
     position: absolute;
     margin-top: .8rem;
     left: 11%;
+    
+}
+@media screen and (max-width: 600px){
+    div.About{
+        top: -90px !important;
+        padding: 0;
+    }
+    div.About div.about_content{
+        gap: 0;
+    }
+    div.About .about_section .about_paragraph{
+        width: 90%;
+        line-height: 1.5;
+    }
     
 }

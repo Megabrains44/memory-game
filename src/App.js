@@ -2,7 +2,7 @@ import './css/App.css'
 import Menu from './components/Menu';
 import Game from './Game';
 // import { useEffect, useState } from 'react';
-import settings from './scripts/settings';
+// import settings from './scripts/settings';
 import React from 'react';
 import About from './components/About';
 

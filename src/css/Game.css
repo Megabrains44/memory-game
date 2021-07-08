@@ -69,11 +69,17 @@ button.button_back{
 }
 @media screen and (max-width: 600px){
     h1.game_title{
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+    div.gameStartingIn{
+        font-size: 2rem;
     }
     div.button_selector button{
         width: 150px;
         height: 150px;
+    }
+    div.button_selector{
+        gap: 20px;
     }
     button.button_back{
         left: 10px;
