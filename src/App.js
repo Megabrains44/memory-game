@@ -26,7 +26,7 @@ class App extends React.Component{
   }
   
   gameChange(questions, speed){
-    this.setState({isPlaying: true, currentSelection: "game"})
+    this.setState({isPlaying: true, currentSelection: "game", numQuestions:questions, gameSpeed:speed})
     // this.setState({numQuestions: questions})
     // this.setState({gameSpeed: speed})
     
@@ -82,7 +82,8 @@ class App extends React.Component{
       content = 
       <>
       <Menu gameChange = {this.gameChange} aboutHandler = {this.aboutHandler}/>
-      <Game speed={settings.speed} questions={settings.questions} goToMainMenu={() => {this.goToMainMenu('game')}}/>
+      {/* <Game speed={settings.speed} questions={settings.questions} goToMainMenu={() => {this.goToMainMenu('game')}}/> */}
+      <Game speed={this.state.gameSpeed} questions={this.state.numQuestions} goToMainMenu={() => {this.goToMainMenu('game')}}/>
       </>
     }
     

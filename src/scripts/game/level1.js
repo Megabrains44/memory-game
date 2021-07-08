@@ -105,15 +105,26 @@ function startEventHandler(){
         return isAllCorrect;
       }
       buttons.forEach(button => {
+        console.log('onClick')
+        
+        console.log(button)
         button.addEventListener('click', () => {
             userClicks.push(button);
             counter += 1;
+            console.log('Correct Answer')
+            console.log(buttonElement(counter));
             if (button === buttonElement(counter)){
                 correctAnswer()
             } else{
                 wrongAnswer()
             }
-            if ((counter === numQuestions) && (all(correctClicks) === true)){
+            console.log(all(correctClicks))
+            console.log(correctClicks.length)
+
+            console.log(counter)
+            console.log(numQuestions)
+            console.log((counter === parseInt(numQuestions)) && (all(correctClicks) === true))
+            if ((counter === parseInt(numQuestions)) && (all(correctClicks) === true)){
                 levelPassed()
             }
         })
@@ -131,6 +142,21 @@ function startEventHandler(){
     //             levelPassed()
     //         }
     //     })
+    // }
+    // for (var i = 0; i < buttons.length; i++){
+    //   const button = buttons[i];
+    //   button.addEventListener('click', () => {
+    //     userClicks.push(button);
+    //     counter += 1;
+    //     if (button === buttonElement(counter)){
+    //         correctAnswer()
+    //     } else{
+    //         wrongAnswer()
+    //     }
+    //     if ((counter === numQuestions) && (all(correctClicks) === true)){
+    //         levelPassed()
+    //     }
+    // })
     // }
 }
 export default function level1(speed, questions){
@@ -159,6 +185,8 @@ export default function level1(speed, questions){
     var timeVar = 1;
     var prevElement = null;
     console.log(correctClicks)
+    console.log(userClicks)
+    
     level1Boxes.forEach(box => {
         // console.log(box)
         prevElement = box;
