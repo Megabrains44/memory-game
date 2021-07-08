@@ -1,6 +1,5 @@
 import '../css/Menu.css'
-import ReactDOM from "react-dom";
-import Game from "../Game";
+// import Game from "../Game";
 import React from 'react'
 import settings from '../scripts/settings';
 export default class Menu extends React.Component{

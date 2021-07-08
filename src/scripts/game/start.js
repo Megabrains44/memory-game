@@ -1,5 +1,4 @@
 import level1 from "./level1";
-import settings from "../settings";
 // export default function startGame(gameVar){
 //     const {speed, questions} = gameVar;
 //     console.log('game e');

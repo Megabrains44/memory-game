@@ -5,7 +5,6 @@ import Game from './Game';
 import settings from './scripts/settings';
 import React from 'react';
 import About from './components/About';
-import { tsExpressionWithTypeArguments } from '@babel/types';
 
 class App extends React.Component{
   constructor(props){

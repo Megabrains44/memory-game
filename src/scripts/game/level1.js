@@ -8,7 +8,7 @@ var numQuestions;
 
 function darkenElement(currentColor, element){
   element.style.backgroundColor = "dark" + currentColor;
-  if (currentColor == 'yellow'){
+  if (currentColor === 'yellow'){
     // element.style.backgroundColor = "orange";
     element.style.backgroundColor = "#888820"
   }
@@ -25,7 +25,7 @@ function lightenElement(currentColor, element){
   element.style.backgroundColor = string;
   
   // console.log(element)
-  ;if (currentColor == 'orange'){
+  ;if (currentColor === 'orange'){
     element.style.backgroundColor = "yellow"
   }
 }
@@ -114,7 +114,7 @@ function startEventHandler(){
             } else{
                 wrongAnswer()
             }
-            if ((counter == numQuestions) && (all(correctClicks) === true)){
+            if ((counter === numQuestions) && (all(correctClicks) === true)){
                 levelPassed()
             }
         })

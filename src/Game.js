@@ -1,5 +1,5 @@
 // import {settings} from '../scripts/variables'
-import React, { useEffect } from 'react';
+import React from 'react';
 import './css/Game.css';
 import Button from './components/Button';
 import startGame from './scripts/game/start';
