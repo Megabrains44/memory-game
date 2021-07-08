@@ -93,7 +93,6 @@ function startEventHandler(){
     
     const buttons = document.getElementsByClassName('button');
     if (counter > numQuestions) return;
-    
     const buttonElement = (counter) => level1Boxes[counter-1];
     const all = (list) => {
         var isAllCorrect = true
@@ -105,9 +104,9 @@ function startEventHandler(){
         }
         return isAllCorrect;
       }
-    for (const button of buttons){
+      buttons.forEach(button => {
         button.addEventListener('click', () => {
-            userClicks.push(button)
+            userClicks.push(button);
             counter += 1;
             if (button === buttonElement(counter)){
                 correctAnswer()
@@ -118,7 +117,21 @@ function startEventHandler(){
                 levelPassed()
             }
         })
-    }
+    })
+    // for (const button of buttons){
+    //     button.addEventListener('click', () => {
+    //         userClicks.push(button);
+    //         counter += 1;
+    //         if (button === buttonElement(counter)){
+    //             correctAnswer()
+    //         } else{
+    //             wrongAnswer()
+    //         }
+    //         if ((counter === numQuestions) && (all(correctClicks) === true)){
+    //             levelPassed()
+    //         }
+    //     })
+    // }
 }
 export default function level1(speed, questions){
   counter = 0;
