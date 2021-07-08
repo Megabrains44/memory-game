@@ -1,0 +1,62 @@
+.button_back{
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px black;
+    background-color: rgb(107, 219, 107);
+    font-weight: bold;
+    color: black;
+    font-size: 1.3rem;
+    /* background: radial-gradient(rgb(121, 241, 121), rgb(44, 107, 44)); */
+    
+    
+    
+    
+}
+.button_back:hover{
+    background-color: rgb(39, 87, 39);
+    color: white;
+    cursor: pointer;
+}
+.RestartMenu{
+    background-color: rgb(107, 100, 100);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.restart_contents{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+}
+
+.restart_text{
+    font-size: 1.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.restart_btn_container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.restart_btn_container button{
+    border-radius: 1rem;
+    padding: .6rem;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(199, 126, 126);
+    border: none;
+}
+.restart_btn.btn_yes{
+    background-color: rgb(78, 64, 64);
+}

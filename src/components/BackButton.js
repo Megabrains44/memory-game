@@ -1,5 +1,5 @@
 import React from "react"
-import '../css/backbtn.css'
+import '../css/components.css'
 
 export default function BackButton(props){
     return (
