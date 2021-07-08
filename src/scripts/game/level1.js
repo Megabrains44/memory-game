@@ -91,7 +91,7 @@ function levelPassed(){
   
 function startEventHandler(){
     
-    const buttons = document.getElementsByClassName('button');
+    const buttons = document.querySelectorAll('.button');
     if (counter > numQuestions) return;
     const buttonElement = (counter) => level1Boxes[counter-1];
     const all = (list) => {
